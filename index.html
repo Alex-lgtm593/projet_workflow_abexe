@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet d'Automatisation - Pièces Jointes vers Drive</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 50px;
+            padding-top: 20px; /* Pour l'ancre du menu */
+        }
+        h1 { color: #202124; }
+        h2 { color: #1a73e8; border-bottom: 2px solid #e8eaed; padding-bottom: 10px; }
+        h3 { color: #3c4043; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #5f6368;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projet d'Automatisation Interne</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#cgu">Conditions d'utilisation</a>
+            <a href="#confidentialite">Politique de Confidentialité</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>Bienvenue. Ce site web a été créé uniquement dans le cadre d'un projet technique et administratif interne.</p>
+            <p><strong>Objectif du projet :</strong> L'application associée à ce site a pour but d'automatiser un processus hebdomadaire de gestion documentaire. Elle scanne les e-mails reçus pour détecter des pièces jointes spécifiques et les redirige automatiquement vers un dossier Google Drive désigné, en utilisant la plateforme d'automatisation Make (anciennement Integromat).</p>
+            <p>Ce site n'offre aucun service public et sert uniquement à présenter les mentions légales requises par Google pour la validation OAuth du projet.</p>
+        </section>
+
+        <section id="cgu">
+            <h2>Conditions d'Utilisation</h2>
+            <p><strong>1. Nature du service :</strong> Ce service est un flux de travail (workflow) automatisé privé. Il n'est pas destiné à être utilisé par le grand public.</p>
+            <p><strong>2. Accès :</strong> L'accès à cette automatisation est restreint à l'administrateur du projet. Aucune création de compte n'est proposée aux tiers.</p>
+            <p><strong>3. Responsabilité :</strong> Le propriétaire du projet s'engage à utiliser l'API Google dans le respect strict des limites techniques requises pour l'exécution de l'automatisation de transfert de fichiers.</p>
+        </section>
+
+        <section id="confidentialite">
+            <h2>Politique de Confidentialité</h2>
+            <p>Cette politique explique comment notre projet d'automatisation interne collecte, utilise et protège vos données en relation avec les API Google.</p>
+            
+            <h3>1. Utilisation des données Google (Google API Services User Data Policy)</h3>
+            <p>Notre application utilise les API Google de manière restreinte pour accomplir sa tâche d'automatisation via la plateforme Make. L'utilisation des informations reçues par les API Google et leur transfert vers toute autre application se conforment aux <strong><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Règles d'utilisation des données des services d'API Google</a></strong>, y compris les exigences d'utilisation restreinte (Limited Use requirements).</p>
+
+            <h3>2. Quelles données collectons-nous et pourquoi ?</h3>
+            <ul>
+                <li><strong>Gmail (Lecture) :</strong> L'application accède à la boîte de réception uniquement pour identifier les e-mails pertinents contenant les pièces jointes à traiter.</li>
+                <li><strong>Google Drive (Écriture) :</strong> L'application utilise l'accès à Drive uniquement pour déposer (téléverser) les pièces jointes extraites dans un dossier spécifique.</li>
+            </ul>
+
+            <h3>3. Comment les données sont-elles stockées et partagées ?</h3>
+            <p>Aucune donnée (ni le contenu des e-mails, ni les pièces jointes, ni les identifiants) n'est stockée sur ce site web ou sur une base de données tierce autre que le traitement temporaire effectué par la plateforme <strong>Make</strong> au moment de l'exécution du scénario. Aucune donnée personnelle n'est revendue, partagée à des annonceurs ou exploitée à des fins commerciales.</p>
+
+            <h3>4. Révocation des accès</h3>
+            <p>Vous pouvez à tout moment révoquer l'accès de cette application à votre compte Google en vous rendant sur la page des paramètres de sécurité de votre compte Google (gérer les applications tierces).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projet d'automatisation interne. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
